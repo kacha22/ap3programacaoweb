@@ -1,0 +1,330 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    background-color: rgb(198, 235, 222);
+}
+
+/*          Cabeçalho           */
+#header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #6CA632;
+}
+#header img{
+    width: 200px;
+    margin-left: 25px;
+    border-radius: 100%;
+    background-color: rgba(255, 235, 205, 0.541);
+}
+
+#menu a {
+    font-family: fantasy;
+    color: black;
+    text-decoration: none;
+    margin: 10px;
+}
+
+#menu, li{
+    display: flex;
+    margin-left: 10px;
+    
+}
+#menu a{
+    display: block;
+    padding: 10px;
+}
+
+/*          Corpo da página inicial         */
+
+#inicio{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 820px;
+    padding: 10px;
+}
+
+.dicasAlimentacao p, .video1{
+    display: flex;
+    display: inline-block;
+    width: auto;
+}
+
+.acesso {
+    display: inline-flex;
+}
+
+.dicasAlimentacao h1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+.dicasAlimentacao p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    padding: 0px;
+    width: 500px;
+    color: #252525;
+    text-align: center;
+    margin: 0px;
+}
+
+.video1{
+    margin-top: 10px;
+    width: auto;
+    height: auto;
+    display: inline-block;
+}
+
+.imagemAlimentos img{
+    width: 900px;
+    height: 800px;
+}
+
+#inicio h2{
+    margin-top: 0%;
+}
+
+/*          Corpo Calculadora IMC            */
+
+#calculadora{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 820px;
+    padding: 20px;
+  }
+
+.calcimc {
+    background-color: rgba(140, 167, 157, 0.322);
+    text-align: center;
+    margin: 0%;
+    flex-basis: 100%;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    background: rgba(94, 112, 106, 0.486);
+    width: 400px;
+    height: 600px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    box-shadow: 0 0 10px black;
+}
+  
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    font: bold 2.5rem serif;
+    border-bottom: solid 5px black;
+    margin-bottom: 20px;
+}
+  
+.input {
+    display: flex;
+    width: 300px;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+.input input {
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    border:none;
+    outline: 0;
+    font: bold 1.5rem serif;
+    text-align: center;
+}
+  
+.input label {
+    font: bold 1.5rem serif;
+}
+  
+button{
+    width: 300px;
+    height: 40px;
+    font: bold 1.2rem serif;
+    background: #000;
+    color: rgb(255,198,0);
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+.result{
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    width: 300px;
+    height: 150px;
+    border-radius: 5px;
+    font: italic 1.5rem serif;
+    box-shadow: 0px 0px 10px rgb(255, 255, 255);
+    background: rgb(230, 223, 223);
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    box-sizing: border-box;
+    user-select: none;
+} 
+
+#calculadora img{
+    width: 600px;
+}
+
+.texto h1{
+    display: flex;
+    text-align: center;
+}
+.texto p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+#calculadora p{
+    width: 500px;
+}
+
+/*          Exercicios          */     
+
+.img{
+    display: flex;
+    width: auto;
+    margin: auto;
+    justify-content: center;
+}
+
+.textoNaImg {
+    font-size: 25px;
+    text-align: center;
+    width: 400px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.colunas{
+    display: flex;
+    width: 800px;
+    text-decoration: none;
+    font-size: 30px;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 30px;
+}
+.colunas a {
+    display: inline-block;
+    display: flex;
+    text-decoration: none;
+    color: black;;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgba(41, 67, 68, 0.411);
+    border-radius: 50px;
+}
+
+.size  {
+    height: 600px;
+    margin: auto;
+}
+
+#coluna {
+    display: none;
+    text-align: center;
+    padding: 30px;
+}
+
+#coluna img{
+    height: 400px;
+}
+
+#coluna:target {
+    display: block;
+}
+
+#pernas {
+    display: none;
+    align-items: center;
+    text-align: center;
+}
+
+#pernas img{
+    height: auto;
+    width: 560px;
+}
+
+#pernas:target {
+    display: block;
+}
+
+#articular {
+    display: flex;
+    display: none;
+    text-align: center;
+}
+
+#articular p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 500px;
+    display: inline-block;
+    font-size: 26px;
+    text-align: center;
+}
+
+#articular img{
+    height: auto;
+    width: 500px;
+}
+
+#articular:target {
+    display: block;
+}
+
+#desenvolvimento {
+    display: flex;
+    display: none;
+    text-align: center;
+}
+
+#desenvolvimento p {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 700px;
+    display: inline-block;
+    font-size: 23px;
+}
+
+#desenvolvimento img{
+    height: auto;
+    width: 500px;
+    display: inline-block;
+}
+
+#desenvolvimento:target {
+    display: block;
+}
+
+
+footer {
+    justify-content: center;
+}
+footer p {
+    font-family: fantasy;
+    text-align: center;
+    width: 300px;
+    margin: auto;
+    background: #686565;
+}
